@@ -34,7 +34,8 @@
   </div>
 </header>
 
-    <section class="hero">
+    <main class="main">
+      <section class="hero">
   <div class="container hero__conatiner">
     <div class="hero__content">
       <h1 class="hero__title">
@@ -47,7 +48,7 @@
     </div>
   </div>
 </section>
-    <section class="about" id="about">
+      <section class="about" id="about">
   <div class="container about__container">
     <p class="about__title">
       <span class="about__title-high-text">Robo School</span> — учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
@@ -73,7 +74,7 @@
   </div>
 </section>
 
-    <section class="adventage">
+      <section class="adventage">
   <div class="container adventage__container">
     <h2 class="page__title">Что вы получите после курса</h2>
     <ul class="list-reset adventage__column">
@@ -104,6 +105,97 @@
     </ul>
   </div>
 </section>
+      <section class="trainers" id="tariners">
+  <div class="container trainers__container">
+    <h2 class="page__title">Профессиональные тренеры</h2>
+  </div>
+  <div class="trainers__wrapper">
+    <div class="swiper trainers__content">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="../img/trainer1.webp" type="image/webp" class="trainers__img">
+              <img loading="lazy" src="../img/trainer1.jpg" class="image trainers__img" width="360" height="500" alt="">
+            </picture>
+            <h3 class="trainers__subtitle">Ирина Лайм</h3>
+            <p class="trainers__dscr">преподаватель по робототехнике</p>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer1">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="../img/trainer2.webp" type="image/webp" class="trainers__img">
+              <img loading="lazy" src="../img/trainer2.jpg" class="image trainers__img" width="360" height="500" alt="">
+            </picture>
+            <h3 class="trainers__subtitle">Марина Орлова</h3>
+            <p class="trainers__dscr">преподаватель по робототехнике</p>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer1">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="../img/trainer3.webp" type="image/webp" class="trainers__img">
+              <img loading="lazy" src="../img/trainer3.jpg" class="image trainers__img" width="360" height="500" alt="">
+            </picture>
+            <h3 class="trainers__subtitle">Максим Петров</h3>
+            <p class="trainers__dscr">преподаватель по робототехнике</p>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer1">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="../img/trainer4.webp" type="image/webp" class="trainers__img">
+              <img loading="lazy" src="../img/trainer4.jpg" class="image trainers__img" width="360" height="500" alt="">
+            </picture>
+            <h3 class="trainers__subtitle">Константин Назаров</h3>
+            <p class="trainers__dscr">преподаватель по робототехнике</p>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer1">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="trainers__item">
+            <picture>
+              <source srcset="../img/trainer5.webp" type="image/webp" class="trainers__img">
+              <img loading="lazy" src="../img/trainer5.jpg" class="image trainers__img" width="360" height="500" alt="">
+            </picture>
+            <h3 class="trainers__subtitle">Лиза Весенняя</h3>
+            <p class="trainers__dscr">преподаватель по робототехнике</p>
+            <button class="btn-reset trainers__btn" data-graph-path="trainer1">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="trainers__scroll-btns">
+      <div class="trainers__scroll"></div>
+      <div class="tariners__btns">
+        <button class="btn-reset tariners__prev" aria-label="prev"> <img loading="lazy" src="../img/svg/prev.svg" class="image" width="30" height="30" alt="prevBtn"> </button>
+        <button class="btn-reset tariners__next" aria-label="next"> <img loading="lazy" src="../img/svg/next.svg" class="image" width="30" height="30" alt="nextBtn"> </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h1>Hello</h1>
+    </div>
+  </div>
+</div>
+
     <footer class="footer">
   <div class="container"></div>
 </footer>

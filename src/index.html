@@ -6,9 +6,14 @@
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
-    @include('partials/hero.html')
-    @include('partials/about.html')
-    @include('partials/advantage.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/about.html')
+      @include('partials/advantage.html')
+      @include('partials/trainers.html')
+    </main>
+
+    @include('partials/modals.html')
     @include('partials/footer.html')
   </div>
 </body>

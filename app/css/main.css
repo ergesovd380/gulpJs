@@ -401,4 +401,58 @@ a {
   line-height: 29px;
   color: var(--text-color);
 }
+.trainers__container {
+  padding-top: 100px;
+}
+.trainers__wrapper {
+  padding-left: max(15px, (100% - var(--content-width)) / 2);
+}
+.trainers__subtitle {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--dark-color);
+}
+.trainers__dscr {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--text-color);
+}
+.trainers__btn {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--accent-color);
+}
+.trainers__img {
+  border-radius: 20px;
+  max-width: 360px;
+  max-height: 500px;
+}
+.trainers__scroll-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 77px;
+  margin-bottom: 100px;
+}
+.trainers__scroll {
+  border-radius: 40px;
+  width: 360px;
+  height: 5px;
+  background-color: rgba(20, 16, 36, 0.08);
+}
 /*# sourceMappingURL=main.css.map */
