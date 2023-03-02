@@ -447,12 +447,94 @@ a {
   justify-content: space-between;
   margin: 0;
   margin-top: 77px;
-  margin-bottom: 100px;
 }
 .trainers__scroll {
   border-radius: 40px;
   width: 360px;
   height: 5px;
   background-color: rgba(20, 16, 36, 0.08);
+}
+
+.price__container {
+  padding-top: 100px;
+}
+.price__nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+}
+.price__item {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+}
+.price__card {
+  margin: 0;
+  margin-top: 20px;
+  width: 360px;
+  height: 460px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  color: var(--dark-color);
+}
+.price__card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 40px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+}
+.price__card-title::after {
+  content: "";
+  display: block;
+  margin: 0 10px;
+  width: 20px;
+  height: 3px;
+  background-color: currentColor;
+}
+.price__card-title::before {
+  content: "";
+  display: block;
+  margin: 0 10px;
+  width: 20px;
+  height: 3px;
+  background-color: currentColor;
+}
+.price__card-price {
+  margin: 0;
+  padding-top: 63px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 80px;
+}
+.price__card-descr {
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+.price__card-btn {
+  margin: 0;
+  margin-top: 61px;
+  padding: 25px 78px;
+  border: none;
+}
+.price__first-card {
+  margin: 0;
+  height: 500px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 /*# sourceMappingURL=main.css.map */
