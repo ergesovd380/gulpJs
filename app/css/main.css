@@ -296,9 +296,23 @@ a {
 }
 
 .hero {
-  padding-top: 250px;
+  padding-top: 160px;
   min-height: 800px;
   background-color: var(--dark-color);
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__content {
+  min-width: 516px;
+  padding-top: 150px;
+}
+.hero__girl {
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
 }
 .hero__title {
   margin: 0;
