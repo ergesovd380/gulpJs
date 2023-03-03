@@ -1,0 +1,29 @@
+.footer {
+
+  background-color: var(--dark-color);
+
+  &__container {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: var(--light-color);
+  }
+
+  &__phone {
+    margin-left: 55%;
+  }
+
+  &__copy {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light-color);
+  }
+}
