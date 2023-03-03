@@ -456,7 +456,7 @@ a {
 }
 
 .price__container {
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .price__nav {
   display: -ms-grid;
@@ -536,5 +536,69 @@ a {
   height: 500px;
   background-color: var(--dark-color);
   color: var(--light-color);
+}
+
+.form {
+  background-color: var(--accent-color);
+}
+.form__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+}
+.form__left {
+  -ms-grid-column-span: 5;
+  grid-column: 5 span;
+  padding-top: 106px;
+}
+.form__right {
+  -ms-grid-column-span: 7;
+  grid-column: 7 span;
+  padding-top: 87px;
+}
+.form__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  color: var(--light-color);
+}
+.form__descr {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--light-color);
+}
+.form__form {
+  margin: 0;
+}
+.form__input {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 64px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__btn {
+  margin: 0;
+  width: 500px;
+  height: 64px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
 }
 /*# sourceMappingURL=main.css.map */
