@@ -3,36 +3,81 @@
   min-height: 800px;
   background-color: var(--dark-color);
 
-  &__container {
-    @include flex;
+  @include mobile {
+    min-height: none;
+    padding-top: 55px;
   }
 
-  &__content {
-    min-width: 516px;
-    padding-top: 150px;
+  &__container {
+    @include flex;
+
+    @include mobile {
+      position: relative;
+      text-align: center;
+      display: block;
+    }
   }
 
   &__girl {
-    transform: translateX(100px);
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: block;
+      margin: 0 auto;
+      width: 273px;
+      height: 320px;
+    }
   }
 
   &__title {
     margin: 0;
+    padding-top: 80px;
+    min-width: 516px;
     font-weight: 600;
     font-size: 70px;
     line-height: 112px;
     text-transform: uppercase;
     color: var(--light-color);
 
-    &-text {
-      padding-top: 20px;
-      margin-bottom: 50px;
-      display: block;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
-      text-transform: initial;
-      max-width: 478px;
+    @include mobile {
+      min-width: 100px;
+      font-size: 30px;
+      line-height: 48px;
+      padding-top: 101px;
+    }
+  }
+
+  &__text {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: initial;
+    max-width: 478px;
+    color: var(--light-color);
+
+    @include tablet {
+      max-width: none;
+    }
+
+    @include mobile {
+      padding-top: 10px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-10%);
+      width: 300px;
+      height: 60px;
     }
   }
 }

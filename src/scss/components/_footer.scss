@@ -1,9 +1,16 @@
 .footer {
-
   background-color: var(--dark-color);
 
   &__container {
     padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -12,10 +19,11 @@
     font-size: 30px;
     line-height: 48px;
     color: var(--light-color);
-  }
 
-  &__phone {
-    margin-left: 55%;
+    @include mobile {
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 
   &__copy {
@@ -25,5 +33,14 @@
     font-size: 16px;
     line-height: 26px;
     color: var(--light-color);
+
+    @include mobile {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }

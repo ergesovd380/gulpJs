@@ -5,16 +5,29 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__left {
     grid-column: 5 span;
     padding-top: 106px;
+
+    @include mobile {
+      padding-top: 40px;
+    }
   }
 
   &__right {
     grid-column: 7 span;
     padding-top: 87px;
+
+    @include mobile {
+      padding-top: 40px;
+    }
   }
 
   &__title {
@@ -23,6 +36,11 @@
     font-size: 36px;
     line-height: 47px;
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
 
   &__descr {
@@ -32,6 +50,12 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--light-color);
+
+    @include mobile {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   &__form {
@@ -52,6 +76,24 @@
     &:focus {
       outline: none;
     }
+
+    @include tablet {
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      width: 300px;
+      height: 60px;
+      padding: 17px 20px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    width: 100%;
+    color: var(--light-color);
   }
 
   &__btn {
@@ -64,5 +106,20 @@
     line-height: 26px;
     color: var(--light-color);
     background-color: var(--dark-color);
+
+    @include mobile {
+      width: 300px;
+      height: 60px;
+      margin-bottom: 40px;
+      padding: 19px;
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+  &__bottom-picture {
+    @include mobile {
+      display: none;
+    }
   }
 }

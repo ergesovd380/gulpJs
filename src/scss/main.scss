@@ -5,9 +5,11 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/logo";
 @import "./components/nav";
 @import "./components/phone";
 @import "./components/btn";
+@import "./components/burger";
 @import "./components/tooltip";
 @import "./components/header";
 @import "./components/hero";
@@ -17,3 +19,4 @@
 @import "./components/price";
 @import "./components/form";
 @import "./components/footer";
+@import "./components/modal";

@@ -23,14 +23,20 @@
     <a href="#" class="logo">
       <img loading="lazy" src="img/svg/ROBO.SCHOOL.svg" alt="Логотип" width="228" height="48">
     </a>
-    <nav class="nav" title="Главное меню">
+    <nav class="nav" title="Главное меню" data-menu>
       <ul class="list-reset nav__list">
-        <li class="nav__item"><a href="#" class="nav__link" data-scroll>О школе</a></li>
-        <li class="nav__item"><a href="#" class="nav__link" data-scroll>Тренеры</a></li>
-        <li class="nav__item"><a href="#" class="nav__link" data-scroll>Стоимость</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О школе</a></li>
+        <li class="nav__item"><a href="#trainers" class="nav__link" data-menu-item data-scroll>Тренеры</a></li>
+        <li class="nav__item"><a href="#price" class="nav__link" data-menu-item data-scroll>Стоимость</a></li>
       </ul>
+      <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
     </nav>
-    <a href="tel:+78000001122" class="phone">+7 (800-00) 0-11-22</a>
+    <a href="tel:+78000001122" class="phone header__phone" fill="#fff">+7 (800-00) 0-11-22</a>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
@@ -38,13 +44,9 @@
       <section class="hero">
   <div class="container hero__container">
     <div class="hero__content">
-      <h1 class="hero__title">
-        Robo School
-        <span class="hero__title-text">
-          Курсы повышения квалификации по робототехнике для педагогов начальной школы
-        </span>
-      </h1>
-      <a href="#" class="hero__link btn" data-scroll>Записаться на курс</a>
+      <h1 class="hero__title">Robo School</h1>
+      <p class="hero__text">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+      <a href="#" class="hero__link hero__btn btn" data-scroll>Записаться на курс</a>
     </div>
     <picture class="hero__girl">
       <source srcset="../img/bannerGirl.webp" type="image/webp">
@@ -110,7 +112,7 @@
     </ul>
   </div>
 </section>
-      <section class="trainers" id="tariners">
+      <section class="trainers" id="trainers">
   <div class="container trainers__container">
     <h2 class="page__title">Профессиональные тренеры</h2>
   </div>
@@ -182,7 +184,7 @@
   <div class="container">
     <div class="trainers__scroll-btns">
       <div class="trainers__scroll"></div>
-      <div class="tariners__btns">
+      <div class="trainers__btns">
         <button class="btn-reset tariners__prev" aria-label="prev"> <img loading="lazy" src="../img/svg/prev.svg" class="image" width="30" height="30" alt="prevBtn"> </button>
         <button class="btn-reset tariners__next" aria-label="next"> <img loading="lazy" src="../img/svg/next.svg" class="image" width="30" height="30" alt="nextBtn"> </button>
       </div>
@@ -229,20 +231,20 @@
     </div>
     <div class="form__right">
       <form action="#" class="form form__form">
-        <label class="form__label">
-          <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+        <label class="form__label" for="name">
+          <input type="text" name="Имя" id="name" class="input-reset form__input input-name" placeholder="Имя">
         </label>
         <label class="form__label">
-          <input type="number" name="Телефон" class="input-reset form__input" placeholder="Телефон">
+          <input type="number" name="Телефон" class="input-reset form__input input-tel" placeholder="Телефон">
         </label>
         <label class="form__label">
-          <input type="email" name="Email" class="input-reset form__input" placeholder="E-mail">
+          <input type="email" name="Email" class="input-reset form__input input-email" placeholder="E-mail">
         </label>
         <button class="btn-reset form__btn">Оформить заявку</button>
       </form>
     </div>
   </div>
-  <picture>
+  <picture class="form__bottom-picture">
     <source srcset="../img/precent.png" type="image/webp">
     <img loading="lazy" src="../img/precent.png" class="image" width="100%" height="" alt="">
   </picture>
@@ -250,20 +252,33 @@
 
     </main>
 
-    <div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer1">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal modal">
+  <div class="graph-modal__container modal__content" role="dialog" aria-modal="true" data-graph-target="trainer1">
+    <button class="btn-reset js-modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
     <div class="graph-modal__content">
-      <h1>Hello</h1>
+      <picture class="modal__image">
+        <source srcset="../img/trainer1.webp" type="image/webp">
+        <img loading="lazy" src="../img/trainer1.jpg" class="image" width="160" height="222" alt="">
+      </picture>
+      <h3 class="modal__name">Марина Орлова</h3>
+      <p class="modal__job">преподаватель по робототехнике</p>
+      <div class="modal__facebook">
+        <a href="#"><img loading="lazy" src="../img/svg/facebook.svg" class="image" width="24" height="24" alt="Facebook-icon"></a>
+      </div>
+      <div class="modal__instagram">
+        <a href="#"><img loading="lazy" src="../img/svg/instagram.svg" class="image" width="24" height="24" alt="Instagram-icon"></a>
+      </div>
     </div>
   </div>
 </div>
 
     <footer class="footer">
   <div class="container footer__container">
-    <a href="#" class="footer__title">ROBO.SCHOOL</a>
+    <div class="footer__left">
+      <a href="#" class="footer__title">ROBO.SCHOOL</a>
+      <p class="footer__copy">© ROBO.SCHOOL</p>
+    </div>
     <a href="tel:+78000001122" class="phone footer__phone">+7 (800-00) 0-11-22</a>
-    <p class="footer__copy">© ROBO.SCHOOL</p>
   </div>
 </footer>
 

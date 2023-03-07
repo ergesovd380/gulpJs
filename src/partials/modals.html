@@ -1,8 +1,19 @@
-<div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer1">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+<div class="graph-modal modal">
+  <div class="graph-modal__container modal__content" role="dialog" aria-modal="true" data-graph-target="trainer1">
+    <button class="btn-reset js-modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
     <div class="graph-modal__content">
-      <h1>Hello</h1>
+      <picture class="modal__image">
+        <source srcset="../img/trainer1.webp" type="image/webp">
+        <img loading="lazy" src="../img/trainer1.jpg" class="image" width="160" height="222" alt="">
+      </picture>
+      <h3 class="modal__name">Марина Орлова</h3>
+      <p class="modal__job">преподаватель по робототехнике</p>
+      <div class="modal__facebook">
+        <a href="#"><img loading="lazy" src="../img/svg/facebook.svg" class="image" width="24" height="24" alt="Facebook-icon"></a>
+      </div>
+      <div class="modal__instagram">
+        <a href="#"><img loading="lazy" src="../img/svg/instagram.svg" class="image" width="24" height="24" alt="Instagram-icon"></a>
+      </div>
     </div>
   </div>
 </div>

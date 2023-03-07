@@ -3,16 +3,33 @@
   
   &__container {
     padding: 100px 0;
+
+    @include mobile {
+      padding: 60px 0;
+    }
   }
 
   &__column {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include mobile {
+      gap: 0;
+    }
   }
 
   &__item {
     grid-column: 4 span;
+    
+    @include big-tablet {
+      grid-column: 6 span;
+      text-align: center;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
 
   &__digit {
@@ -24,6 +41,17 @@
     font-size: 24px;
     line-height: 38px;
     color: var(--dark-color);
+
+    @include tablet {
+      padding: 0 10px;
+    }
+
+    @include mobile {
+      padding: 0 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
 
   &__descr {
@@ -32,9 +60,15 @@
     font-style: 18px;
     line-height: 29px;
     color: var(--text-color);
-  }
 
-  &__tooltip {
-    
+    @include tablet {
+      padding: 0 10px;
+    }
+
+    @include mobile {
+      padding: 0 10px;
+      font-style: 16px;
+      line-height: 26px;
+    }
   }
 }
