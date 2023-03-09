@@ -1,3 +1,107 @@
+.graph-modal__close {
+  margin: 40px;
+}
+
 .modal {
-  
+  padding: 40px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__bottom-content {
+    padding-top: 20px;
+    max-height: 250px;
+  }
+
+  &__image {
+    margin-right: 40px;
+
+    @include mobile {
+      margin: auto 10px auto 0px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--dark-color);
+  }
+
+  &__job {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--text-color);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--dark-color);
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dark-color);
+  }
+
+  .simplebar-track.simplebar-vertical {
+    background-color: rgb(20, 16, 36, 0.08);
+    margin: 20px 0;
+    width: 5px;
+    border-radius: 40px;
+  }
+
+  .simplebar-scrollbar::before {
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    width: 5px;
+    background-color: var(--dark-color);
+    opacity: 1;
+  }
+}
+
+.tabs {
+  &__menu {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+  }
+
+  &__nav {
+    justify-content: space-between;
+    max-width: 70%;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: var(--dark-color);
+
+      &:focus {
+        background-color: transparent;
+        color: var(--accent-color);
+      }      
+
+      &--active {
+        outline: none;
+        background-color: transparent;
+        color: var(--accent-color);
+      }
+    }
+  } 
 }

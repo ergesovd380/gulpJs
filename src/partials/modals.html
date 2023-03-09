@@ -1,18 +1,115 @@
-<div class="graph-modal modal">
-  <div class="graph-modal__container modal__content" role="dialog" aria-modal="true" data-graph-target="trainer1">
-    <button class="btn-reset js-modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
+<div class="graph-modal">
+  <div class="graph-modal__container modal" role="dialog" aria-modal="true" data-graph-target="trainer1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content">
-      <picture class="modal__image">
-        <source srcset="../img/trainer1.webp" type="image/webp">
-        <img loading="lazy" src="../img/trainer1.jpg" class="image" width="160" height="222" alt="">
-      </picture>
-      <h3 class="modal__name">Марина Орлова</h3>
-      <p class="modal__job">преподаватель по робототехнике</p>
-      <div class="modal__facebook">
-        <a href="#"><img loading="lazy" src="../img/svg/facebook.svg" class="image" width="24" height="24" alt="Facebook-icon"></a>
+      <div class="modal__top">
+        <div class="modal__image">
+          <picture>
+            <source srcset="../img/trainer1.webp" type="image/webp">
+            <img loading="lazy" src="../img/trainer1.jpg" class="image" width="160" height="222" alt="">
+          </picture>
+        </div>
+        <div class="modal__text">
+          <h3 class="modal__name">Марина Орлова</h3>
+          <p class="modal__job">преподаватель по робототехнике</p>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="modal__instagram">
-        <a href="#"><img loading="lazy" src="../img/svg/instagram.svg" class="image" width="24" height="24" alt="Instagram-icon"></a>
+        <div class="tabs" data-tabs="tabsfor1">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Награды</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="modal__bottom-content" data-simplebar>
+                <div class="modal__descr">
+                  <p class="modal__info">Сентябрь 1995 — Июнь 2000</p>
+                  <p class="modal__info">Санкт-Петербургский политехнический университет Петра Великого</p>
+                  <p class="modal__info">Факультет: Компьютерных наук и технологий</p>
+                  <p class="modal__info">Специальность: Математика и компьютерные науки</p>
+                  <p class="modal__info">Форма обучения: Очная</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="modal__bottom-content" data-simplebar>
+                <div class="modal__descr">
+                  <p class="modal__info">Сентябрь 1995 — </p>
+                  <p class="modal__info">Санкт-Петербургский политехнический университет Петра Великого</p>
+                  <p class="modal__info">Факультет: Компьютерных наук и технологий</p>
+                  <p class="modal__info">Специальность: Математика и компьютерные науки</p>
+                  <p class="modal__info">Форма обучения: Очная</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="modal__bottom-content" data-simplebar>
+                <div class="modal__descr">
+                  <p class="modal__info"> — Июнь 2000</p>
+                  <p class="modal__info">Санкт-Петербургский политехнический университет Петра Великого</p>
+                  <p class="modal__info">Факультет: Компьютерных наук и технологий</p>
+                  <p class="modal__info">Специальность: Математика и компьютерные науки</p>
+                  <p class="modal__info">Форма обучения: Очная</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+                <div class="modal__descrtwo">
+                  <h3 class="modal__subtitle">Курсы и тренинги</h3>
+                  <p class="modal__info">Ноябрь 2020 - Февраль 2021</p>
+                  <p class="modal__info">Программа дополнительного образования "3D Моделирование"</p>
+                  <p class="modal__info">Место проведения: Институт дополнительного оброзования "Политех"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
